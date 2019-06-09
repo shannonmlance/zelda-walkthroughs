@@ -1,0 +1,17 @@
+form {
+    padding: 5% 0%;
+}
+p {
+    margin-top: 2%;
+}
+.avatar-images {
+    width: 100%;
+}
+img {
+    width: 12.5%;
+    height: 100%;
+}
+.button-container {
+    text-align: center;
+    margin-top: 1%;
+}

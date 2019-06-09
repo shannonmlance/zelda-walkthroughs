@@ -1,0 +1,27 @@
+.nav-template-button, .nav-icons {
+    display: inline-block;
+    vertical-align: top;
+}
+#avatar {
+    display: inline-block;
+    width: 20%;
+    padding: 1%;
+}
+.nav-icons {
+    width: 80%;
+}
+.nav-template-button {
+    width: 20%;
+    padding: 3%;
+}
+.nav-template-button img {
+    width: 100%;
+}
+.nav-template-button p {
+    text-align: center;
+    margin-top: 2%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}

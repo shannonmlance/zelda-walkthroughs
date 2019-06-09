@@ -1,55 +1,31 @@
-<div class="container">
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
+<div class="container" id="nav-template">
+    <!-- <a [routerLink]="['/avatar']"><img src="assets/avatar-initial.png" alt="generic avatar" id="avatar"></a> -->
+    <img src="assets/avatar-initial.png" alt="generic avatar" id="avatar">
+    <div class="nav-icons">
+        <!-- <a [routerLink]="['/home']"> -->
+            <div class="nav-template-button" id="nav-template-home">
+                <img src="assets/home.png" alt="home icon">
+                <p>Home</p>
+            </div>
+        <!-- </a> -->
+        <div class="nav-template-button" id="nav-template-stats">
+            <img src="assets/stats.png" alt="statistics icon">
+            <p>Statistics</p>
         </div>
-    </nav>
-    <div class="jumbotron">
-        <h1 class="text-center">Welcome to angular</h1>
-        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-    </div>
-    <p>This is some text.</p>
-    <p>This is another text.</p>
-</div>
-
-<div id="accordion">
-    <h3>Section 1</h3>
-    <div>
-        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
-        Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
-        condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
-        Nam mi. Proin viverra leo ut odio.</p>
-    </div>
-    <h3>Section 2</h3>
-    <div>
-        <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
-        Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
-        faucibus interdum tellus libero ac justo.</p>
-    </div>
-    <h3>Section 3</h3>
-    <div>
-        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
-        Quisque lobortis.Phasellus pellentesque purus in massa.</p>
-        <ul>
-        <li>List item one</li>
-        <li>List item two</li>
-        <li>List item three</li>
-        </ul>
+        <!-- <a [routerLink]="['/walkthroughs-landing-page']"> -->
+            <div class="nav-template-button" id="nav-template-walk">
+                <img src="assets/walk.png" alt="walkthrough icon">
+                <p>Walkthroughs</p>
+            </div>
+        <!-- </a> -->
+        <div class="nav-template-button" id="nav-template-guides">
+            <img src="assets/guide.png" alt="guide icon">
+            <p>Guides</p>
+        </div>
+        <div class="nav-template-button" id="nav-template-maps">
+            <img src="assets/map.png" alt="map icon">
+            <p>Maps</p>
+        </div>
     </div>
 </div>
-
 <router-outlet></router-outlet>

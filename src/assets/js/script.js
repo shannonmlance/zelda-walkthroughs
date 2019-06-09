@@ -1,5 +1,3 @@
-console.log("jquery is running.");
-
 $(function() {
     $("#accordion").accordion({
         active: false,

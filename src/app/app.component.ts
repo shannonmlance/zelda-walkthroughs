@@ -9,14 +9,7 @@ declare var $: any;
 export class AppComponent implements AfterContentInit {
   title = 'zelda-app';
   ngAfterContentInit() {
-    console.log("jquery is running.");
-
-    $(function() {
-        $("#accordion").accordion({
-            active: false,
-            collapsible: true,
-            heightStyle: "content"
-        });
+    $.getScript("/assets/js/script.js", function () {
     });
   }
 }

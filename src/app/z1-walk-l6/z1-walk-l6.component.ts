@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-z1-walk-l6',
@@ -10,6 +11,11 @@ export class Z1WalkL6Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterContentInit() {
+    $.getScript("/assets/js/script.js", function() {
+    });
   }
 
 }
